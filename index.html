@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - SecureAI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<script>
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.index-navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('index-scrolled');
+    } else {
+      navbar.classList.remove('index-scrolled');
+    }
+  });
+</script>
+
+<meta name="description" content="SecureAI - AI-powered cybersecurity education. Learn about AI threat detection, malware protection, and more.">
+<meta name="keywords" content="AI cybersecurity, threat detection, machine learning, cybersecurity education">
+
+</head>
+
+<body>
+
+  <!-- TOP NAVBAR -->
+  <header class="index-navbar">
+    <div class="index-logo">
+      <img src="Images/Secure-AI-Logo.png" alt="SecureAI Logo">
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" class="index-active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="threat-detection.html">AI in Threat Detection</a></li>
+        <li><a href="ai-vs-cybercrime.html">AI vs Cybercrime</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="index-nav-right">
+      <input type="text" placeholder="Search threats, features..." data-testid="search-input">
+      <button class="index-login-btn" onclick="window.location.href='login.html'" data-testid="login-nav-btn">Login / Signup</button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" data-testid="hamburger-btn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- SECONDARY NAV -->
+  <div class="index-subnav">
+    <a href="#">AI Threat Detection</a>
+    <a href="#">Data Protection</a>
+    <a href="#">Cloud Security</a>
+    <a href="#">About SecureAI</a>
+  </div>
+
+  <!-- MAIN PAGE BODY -->
+  <div class="index-page-body">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="index-sidebar-left">
+      <h3>Overview</h3>
+      <ul>
+        <li><a href="#">1. Overview</a></li>
+        <li><a href="#">2. AI Monitoring</a></li>
+        <li><a href="#">3. Malware Detection</a></li>
+        <li><a href="#">4. Phishing Protection</a></li>
+        <li><a href="#">5. Firewall AI</a></li>
+        <li><a href="#">6. Data Encryption</a></li>
+        <li><a href="#">7. User Access Control</a></li>
+        <li><a href="#">8. Risk Analysis</a></li>
+        <li><a href="#">9. Alert & Report</a></li>
+        <li><a href="#">10. Compliance</a></li>
+        <li><a href="#">11. Case Studies</a></li>
+        <li><a href="#">12. Integrations</a></li>
+        <li><a href="#">13. FAQ</a></li>
+        <li><a href="#">14. Supports</a></li>
+        <li><a href="contact.html">15. Contact Us</a></li>
+      </ul>
+    </aside>
+
+    <!-- CENTRE CONTENT -->
+    <main class="index-centre">
+      <div class="index-hero-image">
+        <img src="Images/Secure-AI-Logo.png" alt="SecureAI">
+      </div>
+
+      <div class="index-hero-text">
+        <h1>AI-Powered Cybersecurity You Can Trust</h1>
+        <p>
+          SecureAI uses advanced artificial intelligence to detect, prevent, and respond
+          to cyber threats in real time. Our system continuously learns and adapts
+          to protect your data, networks, and users from cyber attacks.
+        </p>
+      </div>
+    </main>
+
+    <!-- RIGHT SIDEBAR -->
+    <aside class="index-sidebar-right">
+      <h2>Features</h2>
+
+      <div class="index-features-list">
+        <div class="index-feature-item">
+          <img src="Images/Real-Time-Threat-Detection-Icon.png" alt="icon">
+          <span>Real-Time<br>Threat Detection</span>
+        </div>
+
+        <div class="index-feature-item">
+          <img src="Images/AI-Driven-Monitoring-Icon.png" alt="icon">
+          <span>AI Driven Monitoring</span>
+        </div>
+
+        <div class="index-feature-item">
+          <img src="Images/Automated-Alert-Icon.png" alt="icon">
+          <span>Automated Alerts</span>
+        </div>
+
+        <div class="index-feature-item">
+          <img src="Images/Secure-Cloud-Protection-Icon.png" alt="icon">
+          <span>Secure Cloud<br>Protection</span>
+        </div>
+
+        <div class="index-feature-item">
+          <img src="Images/24-7-System-Intelligence-Icon.png" alt="icon">
+          <span>24/7 System<br>Intelligence</span>
+        </div>
+      </div>
+
+      <div class="index-ext-links">
+        <h3>External Links</h3>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="Images/Documentation-Icon.png" alt="icon">
+              Documentation
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="Images/Privacy-Policy-Icon.png" alt="icon">
+              Privacy Policy
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="Images/Terms-of-Service-Icon.png" alt="icon">
+              Terms of Service
+            </a>
+          </li>
+        </ul>
+
+        <!-- Social Icons -->
+        <div class="index-social-icons">
+          <a href="#"><img src="Images/GitHub-Icon.png" alt="GitHub"></a>
+          <a href="#"><img src="Images/Linkedin-Icon.png" alt="LinkedIn"></a>
+          <a href="#"><img src="Images/X-Icon.png" alt="X"></a>
+          <a href="#"><img src="Images/Instagram-Icon.png" alt="Instagram"></a>
+        </div>
+      </div>
+
+    </aside>
+
+  </div>
+
+  <!-- ANIMATED STATS COUNTERS -->
+  <section class="hero-stats fade-in" data-testid="hero-stats-section">
+    <h2>SecureAI in Numbers</h2>
+    <p>Real-time impact of AI-driven cybersecurity, around the clock.</p>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="stat-number" data-counter="2400000" data-suffix="+" data-testid="stat-threats-blocked">0</div>
+        <div class="stat-label">Threats Blocked</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fa-solid fa-bolt"></i></div>
+        <div class="stat-number" data-counter="99.7" data-suffix="%" data-testid="stat-detection-rate">0</div>
+        <div class="stat-label">Detection Accuracy</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fa-solid fa-clock"></i></div>
+        <div class="stat-number" data-counter="24" data-suffix="/7" data-testid="stat-monitoring">0</div>
+        <div class="stat-label">AI Monitoring</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fa-solid fa-globe"></i></div>
+        <div class="stat-number" data-counter="180" data-suffix="+" data-testid="stat-countries">0</div>
+        <div class="stat-label">Countries Protected</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATIONAL FLIP CARDS -->
+  <section class="edu-section fade-in" data-testid="edu-section">
+    <h2>Understand the Threats</h2>
+    <p>Hover or tap each card to learn how to recognise and defend against modern cyber threats.</p>
+    <div class="edu-grid">
+      <div class="edu-flip-card" data-testid="edu-card-phishing">
+        <div class="edu-flip-inner">
+          <div class="edu-front">
+            <i class="fa-solid fa-fish"></i>
+            <h3>Phishing</h3>
+            <span>Hover to learn</span>
+          </div>
+          <div class="edu-back">
+            <p>Fake messages that trick you into revealing passwords or installing malware. Always verify the sender, hover over links, and never share OTPs.</p>
+          </div>
+        </div>
+      </div>
+      <div class="edu-flip-card" data-testid="edu-card-deepfake">
+        <div class="edu-flip-inner">
+          <div class="edu-front">
+            <i class="fa-solid fa-user-secret"></i>
+            <h3>Deepfakes</h3>
+            <span>Hover to learn</span>
+          </div>
+          <div class="edu-back">
+            <p>AI-generated fake videos or audio used to impersonate people. Verify unexpected requests through a second channel — never trust visuals alone.</p>
+          </div>
+        </div>
+      </div>
+      <div class="edu-flip-card" data-testid="edu-card-malware">
+        <div class="edu-flip-inner">
+          <div class="edu-front">
+            <i class="fa-solid fa-bug"></i>
+            <h3>Malware</h3>
+            <span>Hover to learn</span>
+          </div>
+          <div class="edu-back">
+            <p>Malicious software like ransomware, spyware, or trojans. Keep systems updated, use strong endpoint protection, and avoid suspicious downloads.</p>
+          </div>
+        </div>
+      </div>
+      <div class="edu-flip-card" data-testid="edu-card-prompt-injection">
+        <div class="edu-flip-inner">
+          <div class="edu-front">
+            <i class="fa-solid fa-robot"></i>
+            <h3>Prompt Injection</h3>
+            <span>Hover to learn</span>
+          </div>
+          <div class="edu-back">
+            <p>Attacks that manipulate AI/LLM inputs to bypass safety guardrails. Treat all LLM input as untrusted and isolate sensitive AI tooling.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="index-footer">
+    <p>© 2026 SecureAI. All rights reserved</p>
+  </footer>
+
+  <script src="validation.js"></script>
+</body>
+</html>

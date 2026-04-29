@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI vs Cybercrime</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="Images/Secure-AI-Logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="threat-detection.html">AI in Threat Detection</a></li>
+                <li><a href="ai-vs-cybercrime.html" class="active">AI vs Cybercrime</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+    </nav>
+        <div class="nav-right">
+            <input type="text" placeholder="Search threats, features..." data-testid="search-input">
+            <button class="login-btn" onclick="window.location.href='login.html'" data-testid="login-nav-btn">Login / Signup</button>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" data-testid="hamburger-btn">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="Images/AIvsCyber-Background.jpg" class="bg-image" alt="Background">
+        <div class="overlay"></div>
+        <div class="content fade-in">
+            <h1>AI vs Cybercrime</h1>
+            <p>AI in cybersecurity is used to protect systems and detect threats, while cybercrime involves malicious activities aimed at attacking systems and stealing data.</p>
+            <p>As cybercriminals become more sophisticated, AI is stepping in as a powerful defence tool. This page explores how AI is being used to fight back against cybercrime, and how criminals are also attempting to misuse AI for malicious purposes.</p>
+            <p>Understanding both sides helps individuals and organisations stay informed, recognise risks, and take proactive steps to improve cybersecurity in an evolving digital world.</p>
+            <div class="info-sections">
+                <div class="box">
+                    <h2>How AI Fight Cybercrime</h2>
+                    <div class="item">
+                        <img src="Images/Fraud-Detection-Icon.png" alt="icon">
+                        <div><h3>Fraud Detection</h3><p>Spots and blocks suspicious activity instantly.</p></div>
+                    </div>
+                    <div class="item">
+                        <img src="Images/Phishing-Prevention-Icon.png" alt="icon">
+                        <div><h3>Phishing Prevention</h3><p>Detects and filters scam emails automatically.</p></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2>How Criminals Misuse AI</h2>
+                    <div class="item">
+                        <img src="Images/Deepfakes-Icon.png" alt="icon">
+                        <div><h3>Deepfakes</h3><p>Fake videos used to impersonate people.</p></div>
+                    </div>
+                    <div class="item">
+                        <img src="Images/AI-Phishing-Icon.png" alt="icon">
+                        <div><h3>AI Phishing</h3><p>Auto-generates convincing scam messages.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 SecureAI. All rights reserved</p>
+    </footer>
+
+    <script src="validation.js"></script>
+</body>
+</html>

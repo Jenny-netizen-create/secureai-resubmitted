@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SecureAI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <img src="Images/Secure-AI-Logo.png" alt="Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="threat-detection.html">AI in Threat Detection</a></li>
+            <li><a href="ai-vs-cybercrime.html">AI vs Cybercrime</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="nav-right">
+        <input type="text" placeholder="Search threats, features..." data-testid="search-input">
+        <button class="login-btn" onclick="window.location.href='login.html'" data-testid="login-nav-btn">Login / Signup</button>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" data-testid="hamburger-btn">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<section class="hero">
+    <img src="Images/Contact-Us-Background.jpg" class="bg-image" alt="Background">
+    <div class="overlay"></div>
+    <div class="content contact-layout fade-in">
+        <div class="contact-form">
+            <h1>Contact Us</h1>
+            <p>If you have any questions about SecureAI, cybersecurity solutions, or AI-powered threat detection, feel free to contact our team.</p>
+            <form id="contactForm">
+                <label>Name</label>
+                <div class="contact-input-box">
+                    <img src="Images/Name-Icon.png" alt="Name Icon">
+                    <input type="text" id="name" placeholder="Name">
+                </div>
+                <label>Email</label>
+                <div class="contact-input-box">
+                    <img src="Images/Mail-Icon.png" alt="Email Icon">
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <label>Message</label>
+                <textarea id="messageInput" placeholder="Type Your Message"></textarea>
+                <button type="submit" class="contact-submit-btn" id="submitBtn">Submit Message</button>
+                <p id="formMessage" class="form-message"></p>
+            </form>
+        </div>
+        <div class="contact-info">
+            <div class="contact-info-box">
+                <p><img src="Images/Contact-Icon.png" alt="Contact Icon"> +44 (096) 455-21000</p>
+                <p><img src="Images/Mail-Icon.png" alt="Email Icon"> support@secureai.com</p>
+                <p><img src="Images/Location-Icon.png" alt="Location Icon"> SecureAI Cybersecurity Ltd<br>10 Technology Drive<br>London, UK</p>
+                <div class="contact-socials">
+                    <img src="Images/GitHub-Icon.png" alt="GitHub Icon">
+                    <img src="Images/Linkedin-Icon.png" alt="LinkedIn Icon">
+                    <img src="Images/X-Icon.png" alt="X Icon">
+                    <img src="Images/Instagram-Icon.png" alt="Instagram Icon">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- HOW CAN WE HELP -->
+<section class="contact-help-section">
+    <h2 class="contact-section-title">How Can We Help?</h2>
+    <p class="contact-section-subtitle">Choose the topic that best fits your enquiry — we'll route it to the right team.</p>
+    <div class="contact-help-grid">
+        <div class="contact-help-card fade-in">
+            <div class="contact-help-icon"><i class="fa-solid fa-circle-info"></i></div>
+            <h3>General Enquiry</h3>
+            <p>Questions about SecureAI's products, features, or how our platform works.</p>
+            <a href="mailto:support@secureai.com" class="contact-help-link">support@secureai.com</a>
+        </div>
+        <div class="contact-help-card fade-in">
+            <div class="contact-help-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Report a Threat</h3>
+            <p>Spotted suspicious activity, vulnerabilities, or active cyber incidents? Tell us immediately.</p>
+            <a href="mailto:security@secureai.com" class="contact-help-link">security@secureai.com</a>
+        </div>
+        <div class="contact-help-card fade-in">
+            <div class="contact-help-icon"><i class="fa-solid fa-handshake"></i></div>
+            <h3>Partnerships</h3>
+            <p>Interested in collaborating, integrating, or bringing SecureAI to your organisation?</p>
+            <a href="mailto:partners@secureai.com" class="contact-help-link">partners@secureai.com</a>
+        </div>
+    </div>
+</section>
+
+<!-- EMERGENCY HOTLINE -->
+<section class="contact-emergency">
+    <div class="contact-emergency-box fade-in">
+        <div class="contact-emergency-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+        <div class="contact-emergency-text">
+            <h3>Experiencing an Active Cyberattack?</h3>
+            <p>Our incident response team is available <strong>24/7</strong>. Don't wait — call our emergency line and we'll guide you through containment and recovery.</p>
+        </div>
+        <a href="tel:+4409645521000" class="contact-emergency-btn">
+            <i class="fa-solid fa-phone"></i> +44 (096) 455-21000
+        </a>
+    </div>
+</section>
+
+<!-- INFO STRIP -->
+<section class="contact-info-strip">
+    <div class="contact-info-grid">
+        <div class="contact-info-item fade-in">
+            <i class="fa-solid fa-clock"></i>
+            <h4>Response Time</h4>
+            <p>We reply to all enquiries within <strong>24 hours</strong>, Monday to Friday.</p>
+        </div>
+        <div class="contact-info-item fade-in">
+            <i class="fa-solid fa-business-time"></i>
+            <h4>Office Hours</h4>
+            <p>Mon–Fri: 9:00 AM – 6:00 PM<br>Sat: 10:00 AM – 2:00 PM<br>Sun: Closed</p>
+        </div>
+        <div class="contact-info-item fade-in">
+            <i class="fa-solid fa-globe"></i>
+            <h4>Global Support</h4>
+            <p>Serving customers in <strong>180+ countries</strong> with localised support teams.</p>
+        </div>
+        <div class="contact-info-item fade-in">
+            <i class="fa-solid fa-lock"></i>
+            <h4>Confidential</h4>
+            <p>All communications are encrypted and handled with strict confidentiality.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="contact-faq">
+    <h2 class="contact-section-title">Frequently Asked Questions</h2>
+    <p class="contact-section-subtitle">Quick answers to questions we hear most often. Can't find yours? Send us a message above.</p>
+    <div class="contact-faq-list">
+        <details class="contact-faq-item fade-in">
+            <summary>What is SecureAI?</summary>
+            <p>SecureAI is an AI-powered cybersecurity platform that detects, prevents, and responds to cyber threats in real time. We use machine learning to analyse network behaviour, identify anomalies, and protect your data, networks, and users from modern attacks.</p>
+        </details>
+        <details class="contact-faq-item fade-in">
+            <summary>Is SecureAI suitable for individuals or only businesses?</summary>
+            <p>SecureAI is designed for both. Individuals benefit from our educational content and threat awareness tools, while businesses access advanced AI monitoring, threat detection, and incident response capabilities tailored to enterprise needs.</p>
+        </details>
+        <details class="contact-faq-item fade-in">
+            <summary>How quickly does SecureAI detect threats?</summary>
+            <p>Our AI engine analyses network traffic and user behaviour continuously, detecting anomalies in <strong>milliseconds</strong>. Most known threats are blocked instantly, while novel patterns are flagged and contained within seconds.</p>
+        </details>
+        <details class="contact-faq-item fade-in">
+            <summary>Do I need technical knowledge to use SecureAI?</summary>
+            <p>Not at all. SecureAI is built with a simple dashboard and clear alerts so anyone can use it. For deeper customisation, we provide documentation, tutorials, and a dedicated support team.</p>
+        </details>
+        <details class="contact-faq-item fade-in">
+            <summary>What types of cyber threats does SecureAI cover?</summary>
+            <p>We protect against phishing, malware, ransomware, deepfakes, prompt injection, fraud, unauthorised access, and emerging AI-driven attacks. Our threat database is updated continuously with the latest intelligence.</p>
+        </details>
+        <details class="contact-faq-item fade-in">
+            <summary>How do I report a security vulnerability?</summary>
+            <p>Email <a href="mailto:security@secureai.com">security@secureai.com</a> with details. We follow responsible disclosure practices and acknowledge all reports within 24 hours. Critical vulnerabilities are eligible for our bug bounty programme.</p>
+        </details>
+    </div>
+</section>
+<footer>
+    <p>© 2026 SecureAI. All rights reserved</p>
+</footer>
+
+<script src="validation.js"></script>
+<script>
+const form = document.getElementById("contactForm");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const messageInput = document.getElementById("messageInput");
+const formMessage = document.getElementById("formMessage");
+const submitBtn = document.getElementById("submitBtn");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const message = messageInput.value.trim();
+    formMessage.textContent = "";
+    formMessage.className = "form-message";
+
+    if (!name || !email || !message) {
+        formMessage.textContent = "Please fill in all fields!";
+        formMessage.classList.add("error");
+        return;
+    }
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        formMessage.textContent = "Enter a valid email address!";
+        formMessage.classList.add("error");
+        return;
+    }
+    if (message.length < 10) {
+        formMessage.textContent = "Message must be at least 10 characters!";
+        formMessage.classList.add("error");
+        return;
+    }
+    formMessage.textContent = "Sending message...";
+    formMessage.classList.add("loading");
+    submitBtn.disabled = true;
+    setTimeout(() => {
+        formMessage.textContent = "Message sent successfully!";
+        formMessage.classList.remove("loading");
+        formMessage.classList.add("success");
+        form.reset();
+        submitBtn.disabled = false;
+    }, 1000);
+});
+</script>
+</body>
+</html>

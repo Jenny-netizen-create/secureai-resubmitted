@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="login-body">
+
+<div class="login-background"></div>
+
+<div class="login-logo-container">
+    <img class="login-logo" src="Images/Secure-AI-Logo.png" alt="SecureAI Logo">
+</div>
+
+<div class="login-contain">
+    <h2>Login to Your account</h2>
+    <form id="loginForm">
+        <div class="login-input-group">
+            <img src="Images/Mail-Icon.png" alt="Email Icon" class="login-icon login-left-icon">
+            <input type="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="login-input-group">
+            <img src="Images/Password-Icon.png" alt="Password Icon"  class="login-icon login-left-icon">
+            <input type="password" id="password" placeholder="Password" required>
+            <img src="Images/Private-Icon.png" alt="Private Icon" class="login-icon login-right-icon" id="togglePassword">
+        </div>
+        <div class="login-forgot">
+            <a href="#">Forgot Password?</a>
+        </div>
+        <button type="submit" class="login-button" id="loginBtn">Login</button>
+        <p id="message" class="login-message"></p>
+    </form>
+    <p class="login-signup-text">
+        Don't have an account? <a href="#">Sign up</a>
+    </p>
+</div>
+
+<script src="validation.js"></script>
+<script>
+const form = document.getElementById("loginForm");
+const emailInput = document.getElementById("email");
+const passwordInput = document.getElementById("password");
+const message = document.getElementById("message");
+const loginBtn = document.getElementById("loginBtn");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const email = emailInput.value.trim().toLowerCase();
+    const password = passwordInput.value.trim();
+    message.textContent = "";
+    message.className = "login-message";
+
+    if (!email || !password) {
+        message.textContent = "Please fill in all fields!";
+        message.classList.add("error");
+        return;
+    }
+    if (!email.includes("@") || !email.includes(".")) {
+        message.textContent = "Please enter a valid email!";
+        message.classList.add("error");
+        return;
+    }
+    message.textContent = "Checking...";
+    message.classList.add("loading");
+    loginBtn.disabled = true;
+
+    setTimeout(() => {
+        const correctEmail = "jenniferakinsooto@gmail.com";
+        const correctPassword = "@Jenny166";
+        if (email === correctEmail && password === correctPassword) {
+            message.textContent = "Login successful!";
+            message.classList.remove("loading");
+            message.classList.add("success");
+            setTimeout(() => { window.location.href = "index.html"; }, 1000);
+        } else {
+            message.textContent = "Invalid email or password";
+            message.classList.remove("loading");
+            message.classList.add("error");
+            loginBtn.disabled = false;
+        }
+    }, 800);
+});
+
+const toggle = document.getElementById("togglePassword");
+toggle.addEventListener("click", function () {
+    if (passwordInput.type === "password") { passwordInput.type = "text"; }
+    else { passwordInput.type = "password"; }
+});
+</script>
+</body>
+</html>
